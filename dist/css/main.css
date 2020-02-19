@@ -10876,12 +10876,12 @@ readers do not read off random characters that represent icons */
     width: 50%; }
     .form__submit_subscribe {
       width: 100%;
-      height: 48px;
+      height: auto;
       padding: 15px;
       font-size: 14px; }
   .form__input_subscribe {
     width: 100%;
-    height: 46px;
+    height: auto;
     padding: 15px; } }
 
 /*@else {
