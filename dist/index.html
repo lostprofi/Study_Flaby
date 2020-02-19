@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
+        <title>Flaby</title>
+        <link href = "css/main.min.css" rel = "stylesheet"/>
+        
+        
+    </head>
+    
+    <body class = "page">
+        <header class = "header">
+            <div class = "container">
+                <div class = "row">
+                    <nav class = "navbar">
+                        
+                        <a class = "navbar__brand" href = "#">
+                            <img src = "img/header/top-header/logo.png" alt = "logo"/>
+                        </a>
+                        
+                        <button class = "btn navbar__btn navbar__btn_collapse">
+                            <i class="fas fa-align-justify fa-lg"></i>
+                        </button>
+                        
+                        <div class = "navbar__collapse">
+                           <ul class = "navbar__navigation">
+                               <li class = "navbar__list"><a class = "navbar__link" href = "#">HOME</a></li>
+                               <li class = "navbar__list"><a class = "navbar__link" href = "#">SERVICES</a></li>
+                               <li class = "navbar__list"><a class = "navbar__link" href = "#">PORTFOLIO</a></li>
+                               <li class = "navbar__list"><a class = "navbar__link" href = "#">BLOG</a></li>
+                               <li class = "navbar__list"><a class = "navbar__link" href = "#">CONTACT US</a></li>
+                            </ul>
+                            
+                            <button class = "btn navbar__btn" data-toggle = "modal" data-target = "#authorization-form">LOGIN</button>
+                            
+                            <div class="modal fade modal_style_authorization" id="authorization-form" tabindex="-1" role="dialog" aria-labelledby="authorization-form-label" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title modal-title_style_authorization" id="authorization-form-label">Authorization form</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                        </div>
+                                        <div class = "modal-body">
+                                            <form class="form text">
+                                                <div class = "form__input-group">
+                                                    <input type = "text" name = "first-name" id = "first-name" class = "form__input text"/>
+                                                    <label for = "first-name">First name</label>
+                                                    
+                                                </div>
+                                            
+                                                <div class = "form__input-group">
+                                                    <input type = "text" name = "second-name" id = "second-name" class = "form__input text"/>
+                                                    <label for = "second-name">Second name</label>
+                                                    
+                                                </div>
+                                            
+                                                <div class = "form__input-group">
+                                                    <input type = "email" name = "e-mail" id = "e-mail" class = "form__input text"/>
+                                                    <label for = "e-mail">e-mail</label>
+                                                    
+                                                </div>
+                                                
+                                                <input type = "submit" class = "btn form__submit" value = "Submit"/>
+                                            
+                                            </form>
+                                        </div>
+                                        
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn__text btn_style_modal-close" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </nav>
+                </div>
+                <div class = "row">
+                    <div class = "slogan col-xl-6 col-lg-7 col-md-9 col-xs-12">
+                        <h1 class = " slogan__title">FLAT + FREE = FLABY</h1>
+                        <p class = "text slogan__text">A Modern Flat design corporate template for free download with all great features and trendy look</p>
+                        <div class = "slogan__btn-group">
+                            
+                            <a href = "https://store.google.com/us/?hl=en-US"  target="_blank" class = "btn btn_style_slogan">
+                                <img src = "img/header/button/google-play.png" alt = "google play"/>
+                                <p class = "btn__text">Google Store</p>
+                            </a>
+                            
+                            <a href = "#" class = "btn btn_style_slogan" data-toggle = "modal" data-target = "#slogan-learn-more" id = "learn-more">
+                                <p class = "btn__text">Learn More</p>
+                            </a>
+                            
+                            <div class="modal fade" id="slogan-learn-more" tabindex="-1" role="dialog" aria-labelledby="slogan-learn-more-label" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title modal-title" id="slogan-learn-more-label">FLAT + FREE = FLABY</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text" id = "modal-data-learn-more">
+                                           
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn__text btn_style_modal-close" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        
+        <section class = "section">
+            <div class = "section__header">
+                <h3 class = "section__title">Welcome to</h3>
+                <h1 class = "section__title section__title_large">OUR SERVICES</h1>
+                <img src = "img/dividor.png" alt = "dividor"/>
+            </div>
+            
+            <div class = "container">
+                <div class = "row">
+                    <figure class = "col-md-4 col-xs-12 card">
+                        <img src = "img/services/web-development/icon/Layer-72.png" alt = "web development"/>
+                        <figcaption  class = "card__caption">
+                            <h1 class = "card__title">Web Development</h1>
+                            <p>There is many variations of passages of Lorem ipsum available, the majority alteration make difficult</p>
+                        </figcaption>
+                        
+                    </figure>
+                    <figure class = "col-md-4 col-xs-12 card">
+                        <img src ="img/services/photography/icon/Layer-73.png" alt = "photography"/>
+                        <figcaption  class = "card__caption">
+                            <h1 class = "card__title">Photography</h1>
+                            <p>There is many variations of passages of Lorem ipsum available, the majority alteration make difficult</p>
+                        </figcaption>
+                    </figure>
+                    <figure class = "col-md-4 col-xs-12 card">
+                        <img src = "img/services/vector-artist/icon/Layer-74.png" alt = "vector artist"/>
+                        <figcaption  class = "card__caption">
+                            <h1 class = "card__title">Vector Artist</h1>
+                            <p>There is many variations of passages of Lorem ipsum available, the majority alteration make difficult</p>
+                        </figcaption>
+                    </figure>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class = "section section_style_unlimited-custom">
+            <img src = "img/unlimited-customization/mockup/iPad/iPad.png" alt = "iPad"/>
+            <img src = "img/unlimited-customization/mockup/iPhone/iPhone.png" alt = "iPad"/>
+            
+            <div class = "container">
+                <div class = "row justify-content-end">
+                    <div class = "col-xxl-6 section-features">
+                        <h2 class = "section-features__title">We have great features with</h2>
+                        <h1 class = "section-features__title section-features__title_general">Unlimited Customization Features</h1>
+                        <h3 class = "section-features__title section-features__title_subtitle">There are many variations of passages of Lorem Ipsum available, the majority alteration make difficult</h3>
+                        <ul class = "section-features__list">
+                            <li class = "section-features__list-item">More wordpress features with great responsive desighn.</li>
+                            <li class = "section-features__list-item">Corporate flat design with necessary elements.</li>
+                            <li class = "section-features__list-item">Free vector shape and mockup by great designer.</li>
+                            <li class = "section-features__list-item">Full one page flat and modern trend following goods.</li>
+                        </ul>
+                        <button class = "btn btn_style_unlim" data-toggle = "modal" data-target = "#unlim-read-more-cont" id = "unlim-read-more">READ MORE</button>
+                        
+                        <div class="modal fade" id="unlim-read-more-cont" tabindex="-1" role="dialog" aria-labelledby="unlim-read-more-cont-label" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title modal-title" id="unlim-read-more-cont-label">Unlimited Customization Features</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text" id = "modal-data-unlim-read-more">
+                                           
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn  btn_style_modal-close" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "section">
+            <div class = "section__header">
+                <h3 class = "section__title">View Our Latest</h3>
+                <h1 class = "section__title section__title_large">OTHER SERVICES</h1>
+                <img src = "img/dividor.png" alt = "dividor"/>
+            </div>
+            <div class = "container">
+                <div class = "row">
+                    <figure class = "card card_style_os col-sm-12 col-md-4">
+                        <div class = "card__img-wrapper">
+                            <img src = "img/other-services/idea-developing/icon.png" alt = "idea developing"/>
+                        </div>
+                        
+                        <figcaption  class = "card__caption card__caption_style_os">
+                            <h1 class = "card__title card__title_style_os">Idea Developing</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, the majority alteration in some with desugn</p>
+                        </figcaption>
+                        
+                    </figure>
+                    <figure class = "card card_style_os col-sm-12 col-md-4">
+                        <div class = "card__img-wrapper">
+                            <img src = "img/other-services/coding/Browser.png" alt = "best coding"/>
+                        </div>    
+                        <figcaption  class = "card__caption card__caption_style_os">
+                            <h1 class = "card__title card__title_style_os">Best Coding</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, the majority alteration in some with desugn</p>
+                        </figcaption>
+                        
+                    </figure>
+                    <figure class = "card card_style_os col-sm-12 col-md-4">
+                        <div class = "card__img-wrapper">
+                            <img src = "img/other-services/game/Game.png" alt = "game design"/>
+                        </div>    
+                        <figcaption  class = "card__caption card__caption_style_os">
+                            <h1 class = "card__title card__title_style_os">Game Design</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, the majority alteration in some with desugn</p>
+                        </figcaption>
+                        
+                    </figure>
+                    <figure class = "card card_style_os col-sm-12 col-md-4">
+                        <div class = "card__img-wrapper">
+                            <img src = "img/other-services/responsive/ResizeDown.png" alt = "responsive design"/>
+                        </div>
+                        <figcaption  class = "card__caption card__caption_style_os">
+                            <h1 class = "card__title card__title_style_os">Responsive Design</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, the majority alteration in some with desugn</p>
+                        </figcaption>
+                        
+                    </figure>
+                    <figure class = "card card_style_os col-sm-12 col-md-4">
+                        <div class = "card__img-wrapper">
+                            <img src = "img/other-services/free-shopping/Cart.png" alt = "free shopping"/>
+                        </div>    
+                        <figcaption  class = "card__caption card__caption_style_os">
+                            <h1 class = "card__title card__title_style_os">Free Shopping</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, the majority alteration in some with desugn</p>
+                        </figcaption>
+                        
+                    </figure>
+                    <figure class = "card card_style_os col-sm-12 col-md-4">
+                        <div class = "card__img-wrapper">
+                            <img src = "img/other-services/bonus/Gift.png" alt = "bonus download"/>
+                        </div>
+                        <figcaption  class = "card__caption card__caption_style_os">
+                            <h1 class = "card__title card__title_style_os">Bonus Download</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, the majority alteration in some with desugn</p>
+                        </figcaption>
+                        
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class = "section section_style_customer-say">
+            <div class = "section__header ">
+                <h3 class = "section__title">Get know About</h3>
+                <h1 class = "section__title section__title_large">WATCH CUSTOMER SAY</h1>
+                <img src = "img/dividor.png" alt = "dividor"/>
+            </div>
+            <div class = "container">
+                <div class = "row">
+                    
+                    <div class="swiper-container">
+    
+                        <div class="swiper-wrapper">
+       
+                            <div class="swiper-slide">
+                                
+                                <img class = "swiper-slide__customer-photo" src = "img/custome-comments/comment/comment-1/info/name/author-image.png" alt = "customer image"/>
+                                <div class = "swiper-slide__customer-info">
+                                    <h1 class = "swiper-slide__customer-name">Sourabh B.</h1>
+                                    <h4 class = "swiper-slide__customer-status">Co Founder of Mew</h4>
+                                </div>
+                                <p class = "swiper-slide__customer-comment">
+                                Great Team with great experience, i would reguler recommended to all that you will get better support by working with this awesome team and their expert members :)
+                                </p>
+                                
+                            </div>
+                            <div class="swiper-slide">
+                                <div class = "swiper-lazy">
+                                    <img class = "swiper-slide__customer-photo" src = "img/custome-comments/comment/comment-1/info/name/author-image.png" alt = "customer image"/>
+                                    <div class = "swiper-slide__customer-info">
+                                        <h1 class = "swiper-slide__customer-name">Sourabh B.</h1>
+                                        <h4 class = "swiper-slide__customer-status">Co Founder of Mew</h4>
+                                    </div>
+                                    <p class = "swiper-slide__customer-comment">
+                                        Great Team with great experience, i would reguler recommended to all that you will get better support by working with this awesome team and their expert members :)
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <div class="swiper-slide">
+                                <div class = "swiper-lazy">
+                                    <img class = "swiper-slide__customer-photo" src = "img/custome-comments/comment/comment-1/info/name/author-image.png" alt = "customer image"/>
+                                    <div class = "swiper-slide__customer-info">
+                                        <h1 class = "swiper-slide__customer-name">Sourabh B.</h1>
+                                        <h4 class = "swiper-slide__customer-status">Co Founder of Mew</h4>
+                                    </div>
+                                    <p class = "swiper-slide__customer-comment">
+                                        Great Team with great experience, i would reguler recommended to all that you will get better support by working with this awesome team and their expert members :)
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                            <p><span><img class= "swiper-button-prev-unactive" src = "img/custome-comments/prev-arrow.png" alt = "previously"/><img class= "swiper-button-prev-active"src = "img/custome-comments/prev-arrow-light.png" alt = "previously"/></span> Previous</p>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <p> Next <span><img class="swiper-button-next-unactive" src = "img/custome-comments/next-arrow.png" alt = "next"/><img class="swiper-button-next-active" src = "img/custome-comments/next-arrow-light.png" alt = "next"/></span></p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class = "section section_style_great-resourse">
+            <div class = "container">
+                <div class = "row flex-column flex-md-row">
+                    <div class = "col col-12 col-lg-6">
+                        <div class = "col__header">
+                            <h3 class = "col__title">Feel free to download our</h3>
+                            <h1 class = "col__title col__title_large">Great Resourse for free</h1>
+                            <h4 class = "col__title col__title_subtitle">There are many variations of Lorem Ipsum available & majority alteration</h4>
+                        </div>
+                        <p class = "col__content">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 
+                        </p>
+                        
+                    </div>
+                    <div class = "col col-12 col-lg-6">
+                        <img class = "col__img" src = "img/great-resources/mockup.png" alt = "great resources mockup"/>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class = "section section_style_pricing">
+            
+            <div class = "section__header section__header_style_pricing">
+                <h3 class = "section__title">Get Idea About</h3>
+                <h1 class = "section__title section__title_large">PRICING PLAN</h1>
+                <img src = "img/dividor.png" alt = "dividor"/>
+            </div>
+            
+            <div class  = "container section__container ">
+                <div class = "row">
+                    <div class = "card card_style_pricing col-xl-4 col-xs-12">
+     
+                        <div class = "card__inner-wrapper">
+                            <img src = "img/pricing-table/table-1/Book.png" alt = "book"/>
+                            <div class = "card__caption card__caption_pricing">
+                                <h3 class = "card__title card__title_pricing_h3">Student</h3>
+                                <h1 class = "card__title card__title_pricing_h1"><span>$</span>39<span>/mo</span></h1>
+                        
+                                <p>6 GB storage</p>
+                                <p>Fast Brandwidth</p>
+                                <p>Responsive</p>
+                                <p>Customization</p>
+                                
+                                <a href = "#" class = "btn btn_pricing-xs">SIGN UP</a>
+                            </div>
+                        <a href = "#" class = "btn btn_pricing">SIGN UP</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class = "card card_style_pricing col-xl-4 col-xs-12">
+     
+                        <div class = "card__inner-wrapper">
+                            <img src = "img/pricing-table/table-2/bag.png" alt = "bag"/>
+                            <div class = "card__caption card__caption_pricing">
+                                <h3 class = "card__title card__title_pricing_h3">Professional</h3>
+                                <h1 class = "card__title card__title_pricing_h1"><span>$</span>59<span>/mo</span></h1>
+                        
+                                <p>6 GB storage</p>
+                                <p>Fast Brandwidth</p>
+                                <p>Responsive</p>
+                                <p>Customization</p>
+                                <a href = "#" class = "btn btn_pricing-xs">SIGN UP</a>
+                            </div>
+                        <a href = "#" class = "btn btn_pricing">SIGN UP</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class = "card card_style_pricing col-xl-4 col-xs-12">
+     
+                        <div class = "card__inner-wrapper">
+                            <img src = "img/pricing-table/table-3/shopping-Bag.png" alt = "shopping bag"/>
+                            <div class = "card__caption card__caption_pricing">
+                                <h3 class = "card__title card__title_pricing_h3">Unlimited</h3>
+                                <h1 class = "card__title card__title_pricing_h1"><span>$</span>99<span>/mo</span></h1>
+                        
+                                <p>6 GB storage</p>
+                                <p>Fast Brandwidth</p>
+                                <p>Responsive</p>
+                                <p>Customization</p>
+                                <a href = "#" class = "btn btn_pricing-xs">SIGN UP</a>
+                            </div>
+                        <a href = "#" class = "btn btn_pricing">SIGN UP</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class = "section">
+            <div class = "section__header ">
+                <h3 class = "section__title">For latest newsletter</h3>
+                <h1 class = "section__title section__title_large">SUBSCRIBE NOW</h1>
+                <img src = "img/dividor.png" alt = "dividor"/>
+            </div>
+            <div class = "container">
+                <div class = "row justify-content-center">
+                    <form class = "form">
+                        <input class = "form__input form__input_subscribe" type = "text" placeholder = "login"/>
+                        <input class = "form__input form__input_subscribe" type = "email" placeholder = "example@gmail.com"/>
+                        <input class = "form__submit form__submit_subscribe btn" type = "submit" value = "SUBSCRIBE"/>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class = "footer">
+            <div class = "footer__top container">
+                <div class = "footer__block footer__block_description">
+                    <img src = "img/footer/description/logo.png" alt = "flaby"/>
+                    <p class = "footer__description-text">Flaby is a free flat template and avalaible for free downloads but please don't use for sell</p>
+                    <div>
+                        <img src = "img/footer/description/social-icon/facebook/icon.png" alt = "facebook"/>
+                        <img src = "img/footer/description/social-icon/g+/icon.png" alt = "g+"/>
+                        <img src = "img/footer/description/social-icon/twitter/icon.png" alt = "twitter"/>
+                    </div>
+                </div>
+                <div class = "footer__block">
+                    <h1 class = "footer__block-title">Useful Link</h1>
+                    <ul class = "list list_footer">
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Resource</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Downloads</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Graphics</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Templates</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">UI colors</a></li>
+                    </ul>
+                </div>
+                <div class = "footer__block">
+                    <h1 class = "footer__block-title">Free Goods</h1>
+                    <ul class = "list list_footer">
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Movies</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Music</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Videos</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Games</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Application</a></li>
+                    </ul>
+                </div>
+                <div class = "footer__block">
+                    <h1 class = "footer__block-title">Elements</h1>
+                    <ul class = "list list_footer">
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">UI Elements</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Materials</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Flat UI</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Print Free</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Flyer</a></li>
+                    </ul>
+                </div>
+                <div class = "footer__block">
+                    <h1 class = "footer__block-title">About Us</h1>
+                    <ul class = "list list_footer">
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Home</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Portfolio</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Layout</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Blog</a></li>
+                        <li class = "list__item list__item_footer"><a href = "#" class = "list__link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "footer__bottom container">
+                <p class = "footer__rights">&copy Copyright 2017</p>
+                <p class = "footer__rights">All rights reserved</p>
+                <p class = "footer__rights">Templates Designed By <span>Sourabh Barua</span></p>
+            </div>
+        </footer>
+        
+ 
+
+        
+        
+        <script src = "js/libs.min.js"></script>
+    </body>
+    
+</html>
