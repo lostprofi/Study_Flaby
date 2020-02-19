@@ -1,0 +1,72 @@
+.section {
+    padding: 55px 0 100px 0;
+    background-color: map-get($section-bgnd-color, section-services);
+    position: relative;
+    
+    &__header{
+        padding-bottom: 55px;
+        text-align: center;
+        
+        &_style_pricing{
+            margin-bottom: 50px;
+        }
+    }
+    
+    &__title {
+        font-family: RobotoSlab-Regular;
+        //font-size: 18px;
+        color: map-get($text-color, services-title);
+        margin: 0 0 8px 0;
+        
+        &_large{
+            //font-size: 24px;
+            color: map-get($text-color, services-title-large);
+            font-weight: 600;
+            letter-spacing: 0.15em;
+        }
+        
+    }
+    
+    &__container{
+        perspective: 400px;
+    }
+    
+    
+    
+    &_style_unlimited-custom {
+        height: 780px;
+        background: url('../img/unlimited-customization/bg.png');
+        padding-top: 100px;
+        
+        >img{
+            &:nth-child(1){
+                position: absolute;
+                top: 118px;
+            }
+            
+            &:nth-child(2){
+                position: absolute;
+                top: 210px;
+                left: 416px;
+            }
+        }
+    }
+    
+    &_style_customer-say{
+        height: 758px;
+        background: url('../img/custome-comments/bg.png');
+    }
+    
+    &_style_great-resourse{
+        padding-top: 100px;
+    }
+    
+    &_style_pricing {
+        
+        background: url('../img/pricing-table/BG.png') 100% 100% no-repeat;
+    }
+}
+
+
+
+@import "_section-media.scss";

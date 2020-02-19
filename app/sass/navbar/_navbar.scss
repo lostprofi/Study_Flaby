@@ -1,0 +1,79 @@
+.navbar {
+    
+    width: 100%;
+    border-bottom: 1px solid map-get($border-color, nav);
+    padding-top: 28px;
+    padding-bottom: 16px;
+    position: relative;
+    
+   
+        
+    &__btn{
+        font-family: Raleway-SemiBold;
+        color: map-get($text-color, general);
+        font-size: 17px;
+        
+        background-color: map-get($btn-bgnd-color, nav-login);
+        padding:17px 20px 18px 22px;
+        border-radius: 8px;
+        letter-spacing: 0.1em;
+        
+        
+        
+        
+        &:focus, &:hover{
+            
+            box-shadow: 0 0 5px 5px map-get($shadows-color, nav-shadow);
+            outline: none;
+        }
+        
+        
+    }
+    
+    &__collapse {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-right: 8px;
+    }
+    
+    &__navigation {
+        display: flex;
+        flex-flow: row nowrap;          
+        margin-right: 16px;
+        
+    }
+    
+    &__list {
+        
+        border-radius: 8px;
+       
+        list-style: none;
+        
+        &:hover, &:focus {
+            transition: 0.3s;
+            box-shadow: 0 0 5px 5px map-get($shadows-color, nav-shadow);
+            outline: none;
+        }
+        
+    }
+    
+    &__link {
+        color: map-get($text-color, general);
+        font-family: Raleway-SemiBold;
+        text-decoration: none;
+        font-size: 17px;
+        cursor: pointer;
+         padding:17px 20px 18px 20px;
+        display: inline-block;
+    }
+    
+    &__btn_collapse{
+        display: none;
+        
+    }
+    
+}
+
+@import "_navbar-media.scss";

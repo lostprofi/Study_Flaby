@@ -1,0 +1,23 @@
+@include adaptive(xs){
+    .col__title{
+        font-size: 18px;
+        
+        &_large{
+            font-size: 24px;
+        }
+    }
+    
+    .col__content{
+        padding-bottom: 15px;
+    }
+}
+
+@include adaptive(sm){
+    .col__title{
+        font-size: 20px;
+        
+        &_large{
+            font-size: 28px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.footer{
+    position: relative;
+    font-family: Raleway-Medium;
+    color: map-get($text-color, footer);
+    font-size: 14px;
+    
+    &__top{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        border-top: 1px solid map-get($border-color, footer-border);
+        border-bottom: 1px solid map-get($border-color, footer-border);
+        padding-top: 42px;
+        padding-bottom: 90px;
+        
+    }
+    
+    &__block{
+        flex-basis: 10%;
+        
+        &_description{
+            flex-basis: 20%;
+        }
+    }
+    
+    &__block-title{
+        margin: 0 0 35px 0;
+        color: map-get($text-color, footer-block-title);
+        font-size: 20px;
+    }
+    
+    &__rights {
+        display: inline-block;
+        padding: 0 16px;
+        
+        &:nth-child(1){
+            padding-left: 0;
+        }
+        
+        &:nth-child(2){
+            border-left: 1px solid map-get($border-color, footer-border);
+            border-right: 1px solid map-get($border-color, footer-border);
+        }
+        
+        &:nth-child(3){
+            >span{
+                font-weight: 800;
+            }
+        }
+    }
+    
+    
+    
+}
+
+@import "./_footer-media.scss";

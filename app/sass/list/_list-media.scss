@@ -1,0 +1,53 @@
+@include adaptive(xs){
+    .list{
+        
+        &_footer{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        &__item{
+            
+            &_footer{
+                padding-right: 8px;
+            }
+        }
+        
+    }
+}
+
+@include adaptive(sm){
+    .list{
+        
+        &_footer{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        &__item{
+            
+            &_footer{
+                padding-right: 8px;
+            }
+        }
+        
+    }
+}
+
+@include adaptive(md){
+    .list{
+        
+        &_footer{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        &__item{
+            
+            &_footer{
+                padding-right: 8px;
+            }
+        }
+        
+    }
+}

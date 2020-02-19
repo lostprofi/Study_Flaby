@@ -1,0 +1,79 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: inherit;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: Raleway-SemiBold;
+    
+    
+    &_style_slogan{
+        background-color: map-get($btn-bgnd-color, slogan-btn);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 240px;
+        border-radius: 8px;
+        padding: 0 31px;
+        color: map-get($text-color, general);
+        line-height: 40px;
+        font-size: 20px;
+        
+        &:hover, &:focus{
+            background-color: map-get($btn-bgnd-color, slogan-btn-hover);
+            box-shadow: 0 8px 11px 0 map-get($shadows-color, slogan-btn);
+            color: map-get($text-color, slogan-btn-hover);
+        }
+        
+    }
+    
+    &_style_modal-close {
+        background-color: map-get($btn-bgnd-color, modal-close);
+        padding: 8px 22px;
+        font-size: 16px;
+        color: map-get($text-color, general);
+        border-radius: 8px;
+        &:hover{
+            background-color: map-get($btn-bgnd-color, modal-close-hover);
+            box-shadow: 0 8px 11px 0 map-get($shadows-color, modal-close);
+            color: map-get($text-color, slogan-btn-hover);
+            outline: none;
+        }
+    }
+    
+    &_style_unlim {
+        background-color: map-get($btn-bgnd-color, unlim-read-more);
+        font-size: 14px;
+        color: map-get($text-color, unlim-read-more-btn);
+        padding: 18px 26px 16px 30px;
+        border-radius: 22px;
+        letter-spacing: 0.1em;
+        margin-top: 36px;
+        
+        &:focus, &:hover{
+            outline: none;
+            box-shadow: 0 10px 16px 0 map-get($shadows-color, unlim-read-more-btn);
+            
+        }
+    }
+    
+    &_pricing{
+        @extend .btn_style_unlim;
+        padding: 18px 40px 16px 44px;
+        margin-bottom: 50px;
+    }
+    
+    &_pricing-xs{
+        @extend .btn_style_unlim;
+        padding: 10px 30px 8px 34px;
+        margin-bottom: 50px;
+        display: none;
+    }
+    
+
+}
+
+@import "_btn-media.scss"

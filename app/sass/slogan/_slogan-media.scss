@@ -1,0 +1,76 @@
+
+.slogan{
+    
+    @include adaptive(md){
+        margin-top: 100px;
+    }
+    
+    @include adaptive(sm){
+        margin-top: 60px;
+    }
+    
+    @include adaptive(xs){
+        margin-top: 20px;
+    }
+    
+
+    &__title {
+        @include adaptive(xl){
+            font-size: 36px;
+        }
+    
+        @include adaptive(lg){
+            font-size: 34px;
+        }
+    
+        @include adaptive(md){
+            font-size: 32px;
+            word-spacing: normal;
+        }
+    
+        @include adaptive(sm){
+            font-size: 28px;
+            word-spacing: normal;
+        }
+    
+        @include adaptive(xs){
+            font-size: 22px;
+            word-spacing: normal;
+        }
+    }
+
+    &__text {
+        @include adaptive(xl){
+            font-size: 24px;
+        }
+    
+        @include adaptive(lg){
+            font-size: 22px;
+        }
+    
+        @include adaptive(md){
+            font-size: 24px;
+        }
+    
+        @include adaptive(sm){
+            font-size: 22px;   
+        }
+    
+        @include adaptive(xs){
+            font-size: 18px;  
+        }
+    }
+    
+    &__btn-group {
+        @include adaptive(sm){
+            justify-content: flex-start;
+            
+        }
+        
+        @include adaptive(xs){
+            justify-content: flex-start;
+            margin-top: 0;
+            
+        }
+    }
+}

@@ -1,0 +1,240 @@
+.card {
+
+    @include adaptive(xs){
+        flex-flow: row nowrap;
+        margin-bottom: 0;
+        
+        >img{
+            width: 50px;
+            height: auto;
+        }
+    }
+    
+    @include adaptive(sm){
+        flex-flow: row nowrap;
+        margin-bottom: 30px;
+        
+        >img{
+            width: 70px;
+            height: auto;
+        }
+        
+    }
+    
+    &__caption{
+        
+        @include adaptive(sm){
+            margin-left: 15px;
+            text-align: start;
+        }
+        
+        @include adaptive(xs){
+            margin-left: 15px;
+            text-align: start;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        
+        
+        &_style_os {
+           @include adaptive(sm){
+                padding-left: 0;
+            }
+            
+            @include adaptive(xs){
+                padding-left: 0;
+            }
+        }
+        
+        &_pricing{
+            @include adaptive(xs){
+                margin: 0 0 0 30px;
+                flex-basis: 45%;
+                display: inline-block;
+            
+                >p{
+                    display: inline;
+                }
+                
+            }
+            
+            @include adaptive(sm){
+                margin: 0 0 0 30px;
+                flex-basis: 45%;
+                
+                >p{
+                    display: inline;
+                }
+                
+            }
+            
+            @include adaptive(md){
+                margin: 0 0 0 30px;
+                flex-basis: 45%;
+                text-align: start;
+                >p{
+                    display: inline;
+                }
+                
+            }
+            
+            @include adaptive(lg){
+                margin: 0 0 0 30px;
+                flex-basis: 45%;
+                text-align: start;
+                >p{
+                    display: inline;
+                }
+                
+            }
+        }
+        
+        
+    }
+    
+    &__img-wrapper{
+        @include adaptive(sm){
+            min-width: 46px;
+            text-align: right;
+            padding-top: 10px;
+        }
+        
+        @include adaptive(xs){
+            min-width: 46px;
+            text-align: right;
+            padding-top: 18px;
+        }
+    }
+    
+    &__title {
+            @include adaptive(xs){
+                margin-bottom: 8px;
+                font-size: 16px;
+                
+                &_pricing_h1{
+                    font-size: 40px;
+                }
+                
+                &_pricing_h3{
+                   
+                    margin: 0;
+                }
+                
+            }
+        
+            @include adaptive(sm){
+                margin-bottom: 14px;
+                
+                &_pricing_h1{
+                    font-size: 50px;
+                    
+                }
+                
+                &_pricing_h3{
+                   
+                    margin: 0;
+                }
+            }
+        
+        @include adaptive(md){
+                
+                
+                &_pricing_h1{
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                }
+                
+                &_pricing_h3{
+                   font-size: 20px;
+                    margin: 0;
+                }
+            }
+        
+        @include adaptive(lg){
+                
+                
+                &_pricing_h1{
+                    font-size: 70px;
+                    margin-bottom: 20px;
+                }
+                
+                &_pricing_h3{
+                   font-size: 25px;
+                    margin: 0;
+                }
+            }
+        }
+    
+    &__inner-wrapper{
+        
+        @include adaptive(xs){
+                padding: 0 0 0 30px;
+                border-radius: 30px;
+            }
+        
+        @include adaptive(sm){
+                padding: 0 0 0 30px;
+                border-radius: 34px;
+            }
+        
+        @include adaptive(md){
+                padding: 0 0 0 30px;
+                flex-flow: row nowrap;
+                border-radius: 44px;
+            
+            }
+        @include adaptive(lg){
+                padding: 0 0 0 30px;
+                flex-flow: row nowrap;
+                 border-radius: 60px;
+            
+            }
+    }
+    
+    &_style_os{
+        @include adaptive(xs){
+            
+            margin:0 0 20px 0;
+            
+            
+            >img{
+                width: auto;
+                height: auto;
+            }
+        }
+        
+        @include adaptive(sm){
+            margin: 25px 0 30px 0;
+            justify-content: flex-end;
+            
+            >img{
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    
+    &_style_pricing{
+        @include adaptive(xs){
+                height: 200px;
+                margin-bottom: 20px;
+            }
+        
+        @include adaptive(sm){
+                height: 250px;
+            margin-bottom: 20px;
+            }
+        @include adaptive(md){
+                height: 300px;
+                margin-bottom: 20px;
+            }
+        @include adaptive(lg){
+                height: 350px;
+            margin-bottom: 30px;
+                
+            }
+    }
+    
+
+    
+}

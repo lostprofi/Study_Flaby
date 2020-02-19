@@ -1,0 +1,27 @@
+.slogan {
+    color: map-get($text-color, general);
+    margin-top: 231px;
+    
+    &__title {
+        font-family: MuseoSlab-300, sans-serif;
+        font-size: 40px;
+         word-spacing: 12px;
+    }
+    
+    &__text {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    
+    &__btn-group{
+        display: flex;
+        flex-flow: row no-wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    
+    
+}
+
+
+@import "_slogan-media.scss";

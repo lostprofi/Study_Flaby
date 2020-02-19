@@ -1,0 +1,21 @@
+.page {
+    @include adaptive(xl){
+        width: 100%;
+    }
+    
+    @include adaptive(lg){
+        width: 100%;
+    }
+    
+    @include adaptive(md){
+        width: 100%;
+    }
+    
+    @include adaptive(sm){
+        width: 100%;
+    }
+    
+    @include adaptive(xs){
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+.btn{
+    
+    &__text{
+        @include adaptive(sm){
+            line-height: normal;
+            font-size: 18px;
+            
+        }
+        
+        @include adaptive(xs){
+            line-height: normal;
+            font-size: 14px;
+            
+        }
+    }
+    
+    &_style_slogan {
+        
+        
+        @include adaptive(sm){
+            padding: 0 20px;
+            width: auto;
+            
+            &:nth-child(2){
+                margin-left: 30px;
+            }
+        }
+        
+        @include adaptive(xs){
+            padding: 0 10px;
+            width: auto;
+            
+            >img{
+                margin-right: 8px;
+            }
+            
+            &:nth-child(2){
+                margin-left: 30px;
+            }
+        }
+        
+        
+    }
+    
+    &_style_unlim {
+        @include adaptive(xs){
+            font-size: 14px;
+            padding: 13px 21px 11px 25px;
+            margin-top: 12px;
+        }
+    }
+    
+    &_pricing{
+        
+        @include adaptive(xs){
+            margin: 0;
+            display: none;
+        }
+        
+        @include adaptive(sm){
+            margin: 0;
+            padding: 18px 26px 16px 30px;
+        }
+        @include adaptive(lg){
+            margin: 0;
+            padding: 18px 40px 16px 44px;
+        }
+        
+    }
+    
+    &_pricing-xs{
+        
+        @include adaptive(xs){
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        
+    }
+    
+   
+}

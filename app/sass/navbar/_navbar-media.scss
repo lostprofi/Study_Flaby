@@ -1,0 +1,135 @@
+
+.navbar {
+    
+    @include adaptive(xxl) {
+        .navbar__collapse {
+            display: flex !important;
+        }
+    }
+    
+    
+    @include adaptive(xl) {
+        .navbar__collapse {
+            display: flex !important;
+        }
+    }
+    
+    @include adaptive(lg) {
+        .navbar__collapse {
+            display: flex !important;
+        }
+    }
+    
+    
+    
+    
+    @include adaptive(md){
+        
+        .navbar__collapse {
+            width: 100%;
+            padding: 0;
+            display: none;
+            margin-top: 18px;
+            
+            
+        }
+        
+        .navbar__btn_collapse{
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .navbar__navigation {
+            flex-flow: column nowrap;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-bottom: 18px;
+            
+        }
+        
+        .navbar__link {
+            display: block;
+        }
+        
+        .navbar__btn {
+            float: right;
+        }
+        
+        
+    }
+    
+    @include adaptive(sm){
+        
+       .navbar__collapse {
+            width: 100%;
+            padding: 0;
+            display: none;
+            margin-top: 18px;
+            
+            
+        }
+        
+        .navbar__btn_collapse{
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .navbar__navigation {
+            flex-flow: column nowrap;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-bottom: 18px;
+            
+        }
+        
+        .navbar__link {
+            display: block;
+        }
+        
+        .navbar__btn {
+            float: right;
+        }
+    }
+    
+    @include adaptive(xs){
+        
+        
+        
+              .navbar__collapse {
+            width: 100%;
+            padding: 0;
+            display: none;
+            margin-top: 18px;
+        }
+        
+        .navbar__btn_collapse{
+            display: inline-block;
+            cursor: pointer;
+            padding: 11px 14px 12px 16px;
+        }
+        
+        .navbar__navigation {
+            flex-flow: column nowrap;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-bottom: 0;
+            
+        }
+        
+        .navbar__link {
+            display: block;
+            font-size: 14px;
+            padding-top: 12px;
+            padding-bottom: 13px;
+        }
+        
+        .navbar__btn {
+            float: right;
+            font-size: 14px;
+            padding: 12px 15px 13px 17px;
+        }
+    }
+}

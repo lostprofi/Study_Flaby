@@ -1,0 +1,23 @@
+.modal-title{
+    
+    font-family: MuseoSlab-300, sans-serif;
+        word-spacing: 12px;
+    
+    
+    
+    
+    &_style_authorization {
+        
+        font-family: MuseoSlab-300, sans-serif;
+        word-spacing: 12px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+.modal{
+    
+    color: map-get($text-color, modal);
+}
+
+

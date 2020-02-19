@@ -1,0 +1,62 @@
+@include adaptive(xs){
+     .swiper-button-prev{
+        top: 75%;
+        left: 20%;
+    }
+    
+    .swiper-button-next{
+        top: 75%;
+        right: 20%;
+    }
+}
+
+@include adaptive(sm){
+    .swiper-button-prev{
+        top: 76%;
+        left: 30%;
+    }
+    
+    .swiper-button-next{
+        top: 76%;
+        right: 30%;
+    }
+}
+
+@include adaptive(md){
+    
+    
+    
+    .swiper-button-prev{
+        top: 76%;
+        left: 35%;
+    }
+    
+    .swiper-button-next{
+        top: 76%;
+        right: 35%;
+    }
+}
+
+@include adaptive(lg){
+    .swiper-button-prev{
+        top: 78%;
+        left: 38%;
+    }
+    
+    .swiper-button-next{
+        top: 78%;
+        right: 38%;
+    }
+}
+
+@include adaptive(xl){
+    .swiper-button-prev{
+        top: 78%;
+        left: 40%;
+    }
+    
+    .swiper-button-next{
+        top: 78%;
+        right: 40%;
+    }
+}

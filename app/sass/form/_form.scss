@@ -1,0 +1,82 @@
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    &__input-group {
+        margin-bottom: 20px;
+    }
+    
+    &__input {
+        
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid map-get($border-color, form-elements);
+        transition: 0.3s;
+        width: 50%;
+        
+        &:focus, &:hover {
+            box-shadow: 0 0 0 3px map-get($shadows-color, form-elements);
+            border-color: map-get($border-color, form-elements-active);
+            outline: none;
+        }
+        
+        &_subscribe {
+            width: 370px;
+            height: 76px;
+            border-radius: 35px;
+            font-family: Raleway-ExtraBold;
+            font-size: 14px;
+            text-align: center;
+            border: none;
+            background-color: map-get($form, subscribe-input-bgnd);
+            transition: none;
+            margin: 0 0 20px 0;
+            
+            &:focus, &:hover {
+                border: 1px solid map-get($form, subscribe-input-border-col-hov);
+                box-shadow: none;
+                outline: none;
+                background-color: map-get($form, subscribe-input-bgnd-hov);
+                box-shadow: 0 8px 16px 0 map-get($shadows-color, form-subscribe-input);
+            }
+            
+            &::placeholder{
+                color: map-get($form, subscribe-input-placeholder-col);
+            }
+        }
+    }
+    
+    &__submit {
+        border: 1px solid map-get($text-color, form-elements);
+        padding: 8px;
+        width: 20%;
+        border-radius: 8px;
+        outline: none;
+        font-size: 16px;
+       
+        
+        &:active, &:focus, &:hover {
+            box-shadow: 0 0 0 3px map-get($shadows-color, form-elements);
+            border-color: map-get($border-color, form-elements-active);
+            outline: none;
+        }
+        
+        &_subscribe{
+            @extend .btn_style_unlim;
+            width: 370px;
+            height: 76px;
+            border-radius: 35px;
+            margin: 0;
+            transition: none;
+            
+            &:hover, &:focus {
+                box-shadow: 0 10px 16px 0 map-get($form, subscribe-submit-shadow-col);
+                border: none;
+            }
+        }
+    }
+    
+   
+}
+
+@import "_form-media.scss"

@@ -1,0 +1,44 @@
+@mixin adaptive($breakpoint) {
+  @if map-has-key($grid-breakpoints, $breakpoint){
+
+    @if ($breakpoint==xxl){
+      @media(min-width: map-get($grid-breakpoints, $breakpoint)){
+        @content;
+      }
+    }      
+      
+    @if ($breakpoint == xl){
+      @media(min-width: map-get($grid-breakpoints, $breakpoint)) and (max-width: map-get($grid-breakpoints, xxl) - 1px){
+        @content;
+      }
+    }
+
+    @else if ($breakpoint == lg) {
+      @media (min-width: map-get($grid-breakpoints, $breakpoint)) and (max-width: map-get($grid-breakpoints, xl) - 1px){
+        @content;
+      }
+    }
+
+    @else if ($breakpoint == md) {
+      @media (min-width: map-get($grid-breakpoints, $breakpoint)) and (max-width: map-get($grid-breakpoints, lg) - 1px){
+        @content;
+      }
+    }
+
+    @else if ($breakpoint == sm) {
+      @media (min-width: map-get($grid-breakpoints, $breakpoint)) and (max-width: map-get($grid-breakpoints, md) - 1px){
+        @content;
+      }
+    }
+
+    @else if ($breakpoint == xs) {
+      @media (min-width: map-get($grid-breakpoints, $breakpoint)) and (max-width: map-get($grid-breakpoints, sm) - 1px) {
+        @content;
+      }
+    }
+
+   /*@else {
+      @warn ("Error, enter your breakpoint in map");
+    }*/
+  }
+}

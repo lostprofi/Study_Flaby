@@ -1,0 +1,62 @@
+@import "_custom.scss";
+
+//required bootstrap modules
+
+@import "../../node_modules/bootstrap/scss/_functions.scss",
+        "../../node_modules/bootstrap/scss/_mixins.scss",
+        "../../node_modules/bootstrap/scss/_variables.scss",
+        "../../node_modules/bootstrap/scss/_utilities.scss";
+
+
+
+//optional bootstrap modules
+
+@import "../../node_modules/bootstrap/scss/_grid.scss", "../../node_modules/bootstrap/scss/_navbar.scss", "../../node_modules/bootstrap/scss/_close.scss", "../../node_modules/bootstrap/scss/_modal.scss";
+
+//add fontawesome
+
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss", "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+//add swiper styles
+
+@import "../../node_modules/swiper/swiper.scss", "../../node_modules/swiper/components/navigation/navigation.scss";
+
+//add my modules
+
+@import "_my-variables.scss", "text/_text.scss", "_mixins.scss", "page/_page.scss", "button/_btn.scss", "navbar/_navbar.scss", "header/_header.scss", "slogan/_slogan.scss",  "modal/_modal.scss", "form/_form.scss", "section/_section.scss", "card/_card.scss", "section-features/_section-features.scss", "swiper/_swiper.scss", "col/_col.scss", "footer/_footer.scss", "list/_list.scss";
+
+//add fonts
+
+@font-face {
+    font-family: "MuseoSlab-300";
+    src: url("../fonts/MuseoSlab-300.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraBold";
+    src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("../fonts/Raleway-Medium.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+}
+
+
+

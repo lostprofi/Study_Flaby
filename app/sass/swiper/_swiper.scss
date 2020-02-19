@@ -1,0 +1,115 @@
+.swiper-container {
+    
+    width: 730px;
+    height: 350px;
+    box-shadow: 0 0 51px 0 rgba(0,0,0,0.8);
+    border-radius: 10px;
+   
+    
+}
+
+.swiper-slide{
+    background-color: map-get($swiper, bgnd-color);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+    &__customer-photo{
+       max-width: 111px;
+        
+    }
+    
+    &__customer-name {
+        margin: 0;
+        text-align: center;
+        font-family: Raleway-SemiBold;
+        color: map-get($swiper, customer-name-color);
+        font-size: 20px;
+    }
+    
+    &__customer-status {
+        margin: 0;
+        text-align: center;
+        font-family: Raleway-Medium;
+        color: map-get($swiper, status-color);
+        font-size: 15px;
+        font-weight: normal;
+    }
+    
+    &__customer-comment{
+        text-align: center;
+        font-family: Raleway-Medium;
+        color: map-get($swiper, comment-color);
+        font-size: 18px;
+        padding: 0 70px;
+    }
+    
+    
+}
+
+.swiper-lazy{
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+.swiper-button-prev, .swiper-button-next{
+    
+    position: absolute;
+    width:auto;
+    height: auto;
+    top: 78%;
+    font-family: Raleway-SemiBold;
+    font-size: 18px;
+    color: map-get($swiper, nav-text-color);
+    
+    &::after{
+        content: "";
+    }
+    
+    &:active, &:focus{
+        
+        outline: none;
+        color: map-get($swiper, nav-text-color-active);
+        
+       .swiper-button-prev-active, .swiper-button-next-active{
+            display: inline;
+        }
+        
+        .swiper-button-prev-unactive, .swiper-button-next-unactive{
+            display: none;
+        }
+        
+    }
+    
+
+}
+
+.swiper-button-prev-active, .swiper-button-next-active{
+    display: none;
+}
+
+.swiper-button-prev {
+    left: 41.5%;
+    
+    span { 
+        margin-right: 8px; 
+    }
+}
+
+.swiper-button-next {
+    right: 43.5%;
+    
+    span {
+        margin-left: 9px;
+    }
+}
+
+
+
+@import "_swiper-media.scss";

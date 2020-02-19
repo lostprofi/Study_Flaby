@@ -1,0 +1,24 @@
+@include adaptive(xs){
+    
+    .section-features{
+        &__title{
+            font-size: 18px;
+            text-align: center;
+            
+            &_general{
+                font-size: 20px;
+                
+            }
+            
+            &_subtitle {
+                font-size: 18px;
+            }
+        }
+        
+        
+        &__list-item{
+            margin-bottom: 15px;
+        }
+    }
+    
+}

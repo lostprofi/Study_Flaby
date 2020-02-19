@@ -1,0 +1,39 @@
+.col {
+    
+    &__header{
+        font-family: Raleway-Medium;
+    }
+    
+    &__title{
+        font-family: Raleway-SemiBold;
+        font-size: 22px;
+        color: map-get($text-color, col-title);
+        
+        &_large{
+            color: map-get($text-color, col-title-large);
+            font-family: Raleway-SemiBold;
+            font-size: 32px;
+        }
+        
+        &_subtitle{
+            color: map-get($text-color, col-title-subtitle);
+            font-size: 20px;
+        }
+        
+    }
+    
+    &__content{
+        font-family: Raleway-Medium;
+        color: map-get($text-color, col-content);
+        font-size: 14px;
+    }
+    
+    &__img{
+        width: 100%;
+        height: auto;
+        max-width: 532px;
+    }
+    
+}
+
+@import "_col-media.scss";

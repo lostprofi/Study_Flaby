@@ -1,0 +1,29 @@
+.list {
+    list-style: none;
+    
+    font-family: Raleway-Medium;
+    color: map-get($text-color, list-base);
+    padding-left: 0;
+    
+    &__item{
+        padding-bottom: 10px;
+        display: block;
+        
+        
+        
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+        
+        
+        &:hover, &:focus{
+            color: rgb(223,223,223);
+            
+        }
+    }
+}
+
+@import "./_list-media.scss";

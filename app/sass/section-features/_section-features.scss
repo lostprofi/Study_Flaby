@@ -1,0 +1,54 @@
+.section-features{
+    
+    
+    &__title{
+        font-family: Raleway-SemiBold;
+        color: map-get($text-color, section-features-title);
+        font-size: 22px;
+        
+        &_general{
+            color: map-get($text-color, section-features-title-general);
+            font-size: 32px;
+        }
+        
+        &_subtitle {
+            color: map-get($text-color, section-features-title-subtitle);
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+    
+    &__list {
+        
+        
+        font-family: Raleway-Medium;
+        font-size: 14px;
+        color: map-get($text-color,section-features-content);
+    }
+    
+    &__list-item{
+        
+        list-style: none;
+        position: relative;
+        margin-bottom: 22px;
+        
+        &::before{
+            content:"";
+            position: absolute;
+            left: -40px;
+            height: 11px;
+            width: 11px;
+            border: 5px solid map-get($list-style-color, outer);
+            border-radius: 50%;
+            background-color: map-get($list-style-color, inner);
+        }
+        
+        
+        
+    }
+    
+  
+    
+}
+
+@import "_section-features-media.scss"
